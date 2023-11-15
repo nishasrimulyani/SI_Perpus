@@ -8,4 +8,10 @@ use Illuminate\Database\Eloquent\Model;
 class Bookshelf extends Model
 {
     use HasFactory;
+
+    protected $fillable = [
+        'id',
+        'code',     
+        'name',
+    ];
 }

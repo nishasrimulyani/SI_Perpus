@@ -18,6 +18,6 @@
     </div>
 </div>
 <script>
-    document.querySelectorAll('th').forEach(el=>el.classList.add("px-6", "py-3", "text-left", "text-xs", "font-medium", "textgray-500", "uppercase"));
-document.querySelectorAll('td').forEach(el=>el.classList.add("px-6", "py-4", "whitespace-nowrap", "text-sm", "font-medium", "text-gray-800", "dark:text-gray-200"));
+    document.querySelectorAll('th').forEach(el=>el.classList.add("px-6", "py-3", "text-left", "text-xs", "font-medium", "textblack-500", "uppercase"));
+document.querySelectorAll('td').forEach(el=>el.classList.add("px-6", "py-4", "whitespace-nowrap", "text-sm", "font-medium", "text-black-800", "dark:text-black-200"));
 </script>
