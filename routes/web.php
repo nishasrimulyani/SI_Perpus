@@ -41,7 +41,6 @@ Route::middleware('auth')->group(function () {
 
 Route::middleware('auth')->group(function () {
     Route::get('/books', [BookController::class, 'index'])->name('book');
-<<<<<<< HEAD
     Route::get('/books/create', [BookController::class, 'create'])->name('book.create');
     Route::post('/books', [BookController::class, 'store'])->name('book.store');
     
@@ -52,11 +51,6 @@ Route::middleware('auth')->group(function () {
 
 
 
-=======
-});
-
-
->>>>>>> eb9eaa0ec0bf2bc877291972638c62b0a3023e45
 
 
 require __DIR__ . '/auth.php';
