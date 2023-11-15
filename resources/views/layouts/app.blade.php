@@ -84,6 +84,7 @@
                 @php $list .= '<li>'.$error.'</li>'; @endphp
                 @endforeach
                 Swal.fire({
+<<<<<<< HEAD
                     type: 'error',
                     title: "Ooops",
                     html: "<ul>{!! $list !!}</ul>",
@@ -92,5 +93,16 @@
         </script>
 
 
+=======
+                type: 'error',
+                title: "Ooops",
+                html: "<ul>{!! $list !!}</ul>",
+                })
+                @endif
+        </script>
+>>>>>>> eb9eaa0ec0bf2bc877291972638c62b0a3023e45
     </body>
+
 </html>
+
+
