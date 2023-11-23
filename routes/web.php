@@ -45,13 +45,22 @@ Route::middleware('auth')->group(function () {
     Route::get('/books/{id}/edit', [BookController::class, 'edit'])->name('book.edit');
     Route::match(['put', 'patch'], '/books/{id}', [BookController::class, 'update'])->name('book.update');
     Route::delete('/books/{id}', [BookController::class, 'destroy'])->name('book.destroy');
+<<<<<<< HEAD
     Route::get('/books/print', [BookController::class, 'print'])->name('book.print');
     Route::get('/books/export', [BookController::class,'export'])->name('book.export');
+=======
+    Route::get('/books/print', [BookController::class, 'print_books'])->name('book.print');
+    Route::get('/books/export', [BookController::class, 'export'])->name('book.export');
+>>>>>>> 9999de7851287f604238c8eb1399e22be0243630
     Route::post('/books/import', [BookController::class,'import'])->name('book.import');
 
 });
 
+<<<<<<< HEAD
 
+=======
+// Route::resource('books', BookController::class);
+>>>>>>> 9999de7851287f604238c8eb1399e22be0243630
 
 
 require __DIR__ . '/auth.php';
